@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculadora de notas — 28 pontos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<main class="wrap">
+  <h1>Quanto falta pros 28?</h1>
+  <p class="lede">Some suas quatro notas. O total precisa bater <b>28 pontos</b> — média 7. Marque <b>não tenho</b> na nota que ainda não saiu.</p>
+ 
+  <div class="sheet" id="sheet"></div>
+ 
+  <div class="tally">
+    <span>Soma até agora</span>
+    <span><b id="soma">0</b> / 28</span>
+  </div>
+ 
+  <div class="modes" id="modes" hidden>
+    <button type="button" id="mFalta" aria-pressed="true">Quanto preciso tirar</button>
+    <button type="button" id="mFinal" aria-pressed="false">Nota da final</button>
+  </div>
+ 
+  <section class="result" id="result" aria-live="polite">
+    <p class="verdict">Digite pelo menos uma nota para começar.</p>
+  </section>
+ 
+  <button class="reset" type="button" id="reset">Limpar tudo</button>
+</main>
+ 
+<script src="script.js" type="module"></script>
+</body>
+</html>
